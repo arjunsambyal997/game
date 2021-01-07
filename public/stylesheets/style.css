@@ -112,7 +112,18 @@ button {
     -moz-transition: all 0.2s;
     outline: none;
 }
-
+input[type=text] {
+    background-color: steelblue;
+    color: white;
+  }
+  input[type=submit] {
+      text-transform: uppercase;
+    background-color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.2s;
+    color: white;
+  }  
 button:hover {
     background-color: steelblue;
     color: white;
