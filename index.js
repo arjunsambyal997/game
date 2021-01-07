@@ -38,7 +38,9 @@ app.post("/score", function( req,res){
         }
     })
 })
-
+app.get("/submitScore",function(req,res){
+    res.render("form")
+})
 // app.post('/',async(req, res) => 
 // {
 //     const ress = new ress({
@@ -52,4 +54,4 @@ app.post("/score", function( req,res){
 //         }
 // });
 
-app.listen( process.env.PORT, () => console.log("Server Up") );
+app.listen(3000, () => console.log("Server Up") );
