@@ -1,0 +1,119 @@
+Attachments area
+
+body {
+    font-family: "Montserrat", "Avenir";
+    background-color: #fcfcfc;
+    margin: 0;
+}
+
+#container {
+    max-width: 600px;
+    margin: 20px auto;
+    visibility: hidden;
+}
+
+#square1{
+    background-color: blue;
+}
+
+#square2{
+    background-color: brown;
+}
+
+#square3{
+    background-color: coral;
+}
+
+#square4{
+    background-color: crimson;
+}
+
+#square5{
+    background-color: darkgrey;
+}
+
+#square6{
+    background-color: gold;
+}
+
+#square7{
+    background-color: lawngreen;
+}
+
+#square8{
+    background-color: fuchsia;
+}
+
+#square9{
+    background-color: black;
+}
+
+#square10{
+    background-color: orange;
+}
+
+
+
+.square {
+    width: 30%;
+    /* background-color: purple; */
+    padding-bottom: 30%;
+    float:left;
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+}
+
+h1 {
+    background: steelblue;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0;
+    color: white;
+    margin: 0;
+}
+
+
+h2 {
+    background: steelblue;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0;
+    color: white;
+    margin: 0;
+}
+#stripe {
+    background-color: white;
+    /* height: 50px; */
+    
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100%;
+    font-weight: 700;
+    color: rgb(133, 7, 7);
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.2s; /* property change time interval */
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    outline: none;
+}
+
+button:hover {
+    background-color: steelblue;
+    color: white;
+}
