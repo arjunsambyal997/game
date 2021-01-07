@@ -53,5 +53,5 @@ app.get("/submitScore",function(req,res){
 //         res.redirect("/");
 //         }
 // });
-
-app.listen(3000, () => console.log("Server Up") );
+let port = process.env.PORT || 3000;
+app.listen(port, () => console.log("Server Up") );
