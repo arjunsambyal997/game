@@ -21,8 +21,8 @@
         <h2 id ="ress"></h2>
     <div id="stripe">   
         <form action="/score" method="post">
-            <input type="text" name="score" id="score">
-            <input type="submit" value="Submit" onclick="scoreCheck()">
+            <input type="text" name="score" id="score" >
+            <input type="submit" value="Enter Score to database" onclick="scoreCheck()">
         </form>
     </div>
     
@@ -106,10 +106,10 @@ function calcress(squareNo){
     roundNo++    
 
 
-    if(roundNo > 6){//if statement sahi hai na?
+    if(roundNo > 6){
         document.getElementById('round').innerHTML = "Game Over" 
-        /* yhan ilkhna hn db ka ress store krna db m  yaha nai ayega tera db save wala code index.js mei ayega*/ 
-        //button click ke action mei hona chahiye vaise pr aise try kr lete hai
+        /* index.js mei ayega*/ 
+        //button click ke action mei 
        
        
 
@@ -119,13 +119,13 @@ function calcress(squareNo){
     document.getElementById('round').innerHTML = "Round " + roundNo 
 }
 
-//     <button onClick=
-//     var button = document.createElement("button");
-//             button.innerHTML = ress;
+// <button onClick=
+//      var button = document.createElement("button");
+//              button.innerHTML = ress;
 
-//         button.addEventListener ("click", function() {
-//             alert("Score added to database");
-// });
+//        button.addEventListener ("click", function() {
+//              alert("Score added to database");
+//  });
 
 </script>        
     

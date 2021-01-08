@@ -18,10 +18,6 @@ app.set("view engine", "ejs");
 
 app.get('/', (req, res)=>{ 
   
-    // The render method takes the name of the HTML 
-    // page to be rendered as input 
-    // This page should be in the views folder 
-    // in the root directory. 
     res.render('Color'); 
       
     }); 
@@ -41,6 +37,8 @@ app.post("/score", function( req,res){
 app.get("/submitScore",function(req,res){
     res.render("form")
 })
+let port = process.env.PORT || 3000;
+app.listen(port, () => console.log("Server Up") );
 // app.post('/',async(req, res) => 
 // {
 //     const ress = new ress({
@@ -53,5 +51,3 @@ app.get("/submitScore",function(req,res){
 //         res.redirect("/");
 //         }
 // });
-let port = process.env.PORT || 3000;
-app.listen(port, () => console.log("Server Up") );

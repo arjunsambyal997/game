@@ -56,7 +56,6 @@ body {
 
 .square {
     width: 30%;
-    /* background-color: purple; */
     padding-bottom: 30%;
     float:left;
     margin: 1.66%;
@@ -79,7 +78,7 @@ h1 {
 
 
 h2 {
-    background: steelblue;
+    background: rgb(10, 10, 10);
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
@@ -113,6 +112,7 @@ button {
     outline: none;
 }
 input[type=text] {
+    
     background-color: steelblue;
     color: white;
   }
