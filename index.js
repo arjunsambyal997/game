@@ -4,9 +4,9 @@ const app = express();
 const mongoose = require("mongoose");
 const {MongoClient} = require('mongodb');
 const Score = require('./models/scores');
-const url =`mongodb://localhost/Score`;
-// const url="mongodb://arjun:Asdf@1234!@cluster1-shard-00-00.tu2jy.mongodb.net:27017,cluster1-shard-00-01.tu2jy.mongodb.net:27017,cluster1-shard-00-02.tu2jy.mongodb.net:27017/Score?ssl=true&replicaSet=atlas-ei2m0b-shard-0&authSource=admin&retryWrites=true&w=majority";
-
+//const url =`mongodb://localhost/Score`;
+const url="mongodb+srv://arjun:graphqldb@score.bl9ed.mongodb.net/Score?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI;
 app.use(express.static(__dirname+"/public"));
 
 app.use(express.urlencoded({extended: true}));
