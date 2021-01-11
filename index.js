@@ -7,6 +7,8 @@ const Score = require('./models/scores');
 //const url =`mongodb://localhost/Score`;
 const url="mongodb+srv://arjun:graphqldb@score.bl9ed.mongodb.net/Score?retryWrites=true&w=majority";
 const uri = process.env.MONGODB_URI;
+
+
 app.use(express.static(__dirname+"/public"));
 
 app.use(express.urlencoded({extended: true}));
@@ -21,6 +23,7 @@ app.get('/', (req, res)=>{
     res.render('Color'); 
       
     }); 
+    
 app.post("/score", function( req,res){
     var score = req.body.score
     var newScore = {score:score}

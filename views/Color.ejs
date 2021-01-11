@@ -21,8 +21,8 @@
         <h2 id ="ress"></h2>
     <div id="stripe">   
         <form action="/score" method="post">
-            <input type="text" name="score" id="score" >
-            <input type="submit" value="Enter Score to database" onclick="scoreCheck()">
+            <input type="text" placeholder="Enter Score" name="score" id="score" >
+            <input type="submit" value="submit" onclick="scoreCheck()">
         </form>
     </div>
     
@@ -47,7 +47,7 @@
 var customerName = prompt("Please enter your name", "");
 
 if (customerName!= null) 
-    document.getElementById("name").innerHTML = "Hello " + customerName + "  welcome";
+    document.getElementById('customerName').innerHTML = "Hello " + customerName ;
 
  
 var roundNo;
@@ -62,6 +62,7 @@ function startGame(){
     document.getElementById('ress').innerHTML = "Score = 0"
     document.getElementById('start').innerHTML = "resset Game"
 }
+
 function scoreCheck(){
    var score = document.getElementById("score").value
    if(score == ress){
@@ -111,8 +112,6 @@ function calcress(squareNo){
         /* index.js mei ayega*/ 
         //button click ke action mei 
        
-       
-
         return;
     }
 
