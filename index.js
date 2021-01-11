@@ -23,7 +23,7 @@ app.get('/', (req, res)=>{
     res.render('Color'); 
       
     }); 
-    
+
 app.post("/score", function( req,res){
     var score = req.body.score
     var newScore = {score:score}
@@ -42,15 +42,3 @@ app.get("/submitScore",function(req,res){
 })
 let port = process.env.PORT || 3000;
 app.listen(port, () => console.log("Server Up") );
-// app.post('/',async(req, res) => 
-// {
-//     const ress = new ress({
-//         content: req.body.content
-//         });
-//         try {
-//         await ress.save();
-//         res.redirect("/");
-//         } catch (err) {
-//         res.redirect("/");
-//         }
-// });

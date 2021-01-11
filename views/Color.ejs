@@ -22,7 +22,8 @@
     <div id="stripe">   
         <form action="/score" method="post">
             <input type="text" placeholder="Enter Score" name="score" id="score" >
-            <input type="submit" value="submit" onclick="scoreCheck()">
+            <script></script>
+            <input type="submit" value="submit" onclick="scoreCheck()" >
         </form>
     </div>
     
@@ -52,10 +53,27 @@ if (customerName!= null)
  
 var roundNo;
 var ress;
+var colors = [ 'blue', 'brown', 'coral', 'crimson', 'darkgrey', 'gold', 'lawngreen', 'fuchsia', 'black', 'orange' ]
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+function randomize(){
+shuffle(colors)
+    for(let i = 1; i <= 10; i++){
+        let id = 'square' + i
+        document.getElementById(id).style.backgroundColor = colors[i-1]
+    }
+}
              
 function startGame(){
     roundNo = 1
-    ress = 0       
+    ress = 0  
+    randomize()     
         
     document.getElementById('container').style.visibility = "visible"
     document.getElementById('round').innerHTML = "Round 1"
@@ -66,7 +84,7 @@ function startGame(){
 function scoreCheck(){
    var score = document.getElementById("score").value
    if(score == ress){
-    return true
+    alert(document.getElementById("score").innerHTML= "Thanks for Playing  " +  customerName +". Your Score is " + score)
    }else{
        alert("score does not match the actual score")
    }
@@ -114,7 +132,7 @@ function calcress(squareNo){
        
         return;
     }
-
+    randomize()
     document.getElementById('round').innerHTML = "Round " + roundNo 
 }
 

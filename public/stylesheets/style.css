@@ -11,6 +11,7 @@ body {
     max-width: 600px;
     margin: 20px auto;
     visibility: hidden;
+    align-content: center;
 }
 
 #square1{
